@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #201939 0%, #036a6a 100%);
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.quiz-container{
+  background-color: rgba(0, 0, 0, 0.416);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.112);
+  color: #fff;
+  width: 600px;
+  overflow: hidden;
+}
+.quiz-header{
+  padding: 4rem;
+}
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label{
+  cursor: pointer;
+}
+button{
+  background-color: #03a0e4b5;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+button:hover{
+  background-color: #04adc4;
+}
+button:focus{
+  outline: none;
+  background-color: #44b927;
+}
+
+#quiz-back{
+  background-color: #e42103a1;
+  width: 30%;
+}
+
+#quiz-back:hover{
+  background-color: #e42103;
+}
+
+.quiz-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.credits{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  filter: invert(100%);
+}
+
+.credits>a{
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.credits>a:hover{
+  filter: invert(30%);
+}
+.credits>a>svg{
+  height: 20px;
+}
